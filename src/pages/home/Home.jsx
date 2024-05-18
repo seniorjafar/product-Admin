@@ -5,7 +5,6 @@ const Home = () => {
   let {data, loading,error} = useFetch("/products")
   return (
     <div className='home'>
-      <h2>Home</h2>
       <Products isAdmin={false} data={data}/>
     </div>
   )

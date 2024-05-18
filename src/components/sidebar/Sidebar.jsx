@@ -33,7 +33,7 @@ const Sidebar = () => {
           </li>
    
         </ul>
-        <button onClick={handleLogOut}>Log</button>
+        <button type='success' className='btn btn-success m-auto' onClick={handleLogOut}>Log</button>
     </div>
   )
 }

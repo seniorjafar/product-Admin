@@ -19,12 +19,16 @@ const Navbar = () => {
                   <span className="navbar__span navbar__span--empty"></span>
                   <span className="navbar__span"></span>
                   <span className="navbar__span"></span>
-                  <ul className="navbar__menu list-menu">
+                  <ul className="navbar__menu list-menu justify-content-between">
+                    <div>
                       <li className="navbar__container-logo"><h2><NavLink className="navbar__logo link-no-style h1" to="/">Product Logo</NavLink></h2></li>
+                    </div>
+                    <div className='d-flex '>
                       <li className="navbar__menu-item"><NavLink className="body-md link-no-style" to="/">Home</NavLink></li>
                       <li className="navbar__menu-item"><NavLink className="body-md link-no-style" to="/">About</NavLink></li>
                       <li className="navbar__menu-item"><NavLink className="body-md link-no-style" to="/">Portfolio</NavLink></li>
                       <li className="navbar__menu-item"><NavLink className="body-md link-no-style" to={isLogin ? "/admin/create" : "/register"}>{isLogin ? "Account" : "Login"}</NavLink></li>
+                    </div>
                   </ul>
               </div>
           </nav>

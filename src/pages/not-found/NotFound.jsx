@@ -6,7 +6,7 @@ const NotFound = () => {
         <p>404</p>
         <p>Not Found</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ab reiciendis? Incidunt!</p>
-        <button>Go Home</button>
+        <button href='/'>Go Home</button>
     </div>
   )
 }

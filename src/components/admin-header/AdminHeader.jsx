@@ -4,7 +4,7 @@ import React from 'react'
 const AdminHeader = ({setClose}) => {
   return (
     <div className="admin__header">
-          <button onClick={()=> setClose(p => !p)}><IoIosMenu/></button>
+          <button type="button" className="btn" onClick={()=> setClose(p => !p)}><IoIosMenu/></button>
           <div>
             <p>John doe</p>
           </div>

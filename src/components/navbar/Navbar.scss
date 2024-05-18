@@ -1,13 +1,10 @@
-
-
-
 @import '../../assets/scss/abstract/mixins';
 @import '../../assets/scss/abstract/variables';
 
 .navbar {
     text-align: center;
     padding: 2rem;
-    border: 1px solid $red;
+    
 
     &__toggle {
         @include respond(md) {
@@ -108,6 +105,11 @@
     }
 
     &__menu {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: space-between;
         list-style-type: none;
 
         @include respond(md) {
